@@ -4,9 +4,11 @@
     <Node Id="MvcMovie" Label="MvcMovie" Category="Project" />
     <Node Id="Antlr 3.4.1.9004" Label="Antlr 3.4.1.9004" Category="Package" />
     <Node Id="bootstrap 3.0.0" Label="bootstrap 3.0.0" Category="Package" />
+    <Node Id="cldrjs 0.4.1" Label="cldrjs 0.4.1" Category="Package" />
     <Node Id="EntityFramework 6.1.1" Label="EntityFramework 6.1.1" Category="Package" />
     <Node Id="jQuery 1.10.2" Label="jQuery 1.10.2" Category="Package" />
     <Node Id="jQuery.Validation 1.11.1" Label="jQuery.Validation 1.11.1" Category="Package" />
+    <Node Id="jquery-globalize 1.0.0" Label="jquery-globalize 1.0.0" Category="Package" />
     <Node Id="Microsoft.AspNet.Identity.Core 2.1.0" Label="Microsoft.AspNet.Identity.Core 2.1.0" Category="Package" />
     <Node Id="Microsoft.AspNet.Identity.EntityFramework 2.1.0" Label="Microsoft.AspNet.Identity.EntityFramework 2.1.0" Category="Package" />
     <Node Id="Microsoft.AspNet.Identity.Owin 2.1.0" Label="Microsoft.AspNet.Identity.Owin 2.1.0" Category="Package" />
@@ -33,6 +35,7 @@
   </Nodes>
   <Links>
     <Link Source="jQuery.Validation 1.11.1" Target="jQuery 1.10.2" Category="Package Dependency" />
+    <Link Source="jquery-globalize 1.0.0" Target="cldrjs 0.4.1" Category="Package Dependency" />
     <Link Source="Microsoft.AspNet.Identity.EntityFramework 2.1.0" Target="Microsoft.AspNet.Identity.Core 2.1.0" Category="Package Dependency" />
     <Link Source="Microsoft.AspNet.Identity.EntityFramework 2.1.0" Target="EntityFramework 6.1.1" Category="Package Dependency" />
     <Link Source="Microsoft.AspNet.Identity.Owin 2.1.0" Target="Microsoft.AspNet.Identity.Core 2.1.0" Category="Package Dependency" />
@@ -78,6 +81,7 @@
     <Link Source="WebGrease 1.5.2" Target="Antlr 3.4.1.9004" Category="Package Dependency" />
     <Link Source="WebGrease 1.5.2" Target="Newtonsoft.Json 6.0.4" Category="Package Dependency" />
     <Link Source="MvcMovie" Target="bootstrap 3.0.0" Category="Installed Package" />
+    <Link Source="MvcMovie" Target="jquery-globalize 1.0.0" Category="Installed Package" />
     <Link Source="MvcMovie" Target="Microsoft.AspNet.Identity.EntityFramework 2.1.0" Category="Installed Package" />
     <Link Source="MvcMovie" Target="Microsoft.AspNet.Identity.Owin 2.1.0" Category="Installed Package" />
     <Link Source="MvcMovie" Target="Microsoft.AspNet.Mvc 5.2.2" Category="Installed Package" />
